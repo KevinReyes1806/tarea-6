@@ -2,13 +2,12 @@ public abstract class Persona {
     private String nombre;
     private int edad;
 
-    // Constructor
+
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
     }
 
-    // Métodos de acceso (Getters y Setters)
     public String getNombre() {
         return nombre;
     }
@@ -25,6 +24,5 @@ public abstract class Persona {
         this.edad = edad;
     }
 
-    // Método abstracto (será implementado en las subclases)
     public abstract void mostrarProfesion();
 }
