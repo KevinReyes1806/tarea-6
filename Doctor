@@ -1,0 +1,24 @@
+public class Doctor extends Persona {
+    private String especialidad;
+
+    // Constructor
+    public Doctor(String nombre, int edad, String especialidad) {
+        super(nombre, edad);
+        this.especialidad = especialidad;
+    }
+
+    // Métodos de acceso (Getters y Setters)
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
+    }
+
+    // Implementación del método abstracto
+    @Override
+    public void mostrarProfesion() {
+        System.out.println("Soy Doctor, especializado en " + especialidad);
+    }
+}
